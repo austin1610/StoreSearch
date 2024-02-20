@@ -24,14 +24,24 @@
                                     <constraint firstAttribute="height" constant="667" id="kGx-0C-Yjb"/>
                                 </constraints>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Jnr-Az-0uG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zq9-1E-XyG"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IRf-xf-9dv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1oZ-dv-B4V"/>
                             <constraint firstItem="IRf-xf-9dv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4bj-uP-cuT"/>
+                            <constraint firstItem="Jnr-Az-0uG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CEJ-Mw-Gst"/>
                             <constraint firstItem="IRf-xf-9dv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HUF-oE-vA8"/>
                             <constraint firstItem="IRf-xf-9dv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M5D-gf-8Iv"/>
+                            <constraint firstItem="Jnr-Az-0uG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mzV-iY-WMz"/>
+                            <constraint firstItem="Jnr-Az-0uG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pNh-l7-aFZ"/>
                         </constraints>
                     </view>
                 </viewController>
