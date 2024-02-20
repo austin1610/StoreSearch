@@ -23,6 +23,10 @@
                                     <constraint firstAttribute="width" constant="375" id="feg-GW-4is"/>
                                     <constraint firstAttribute="height" constant="667" id="kGx-0C-Yjb"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cm2-Yq-jHf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1PC-EQ-FQ6"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="App name, artist, song, album, e-book." translatesAutoresizingMaskIntoConstraints="NO" id="Jnr-Az-0uG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="56"/>
