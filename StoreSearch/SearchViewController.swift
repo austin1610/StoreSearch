@@ -22,7 +22,13 @@ class SearchViewController: UIViewController {
 // MARK: - Search Bar Delegate
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("The search text is: '\(searchBar.text!)'")
+        searchResults = []
+        for i in 0...2 {
+            searchResults.append(
+                String(format: "Fake Result %d for '%@'", i, searchBar.text!)
+            )
+        }
+        tableView.reloadData()
     }
 }
 
