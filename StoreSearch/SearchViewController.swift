@@ -16,7 +16,7 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.contentInset = UIEdgeInsets(top: 51, left: 0, bottom: 0, right: 0)
     }
 }
 // MARK: - Search Bar Delegate
