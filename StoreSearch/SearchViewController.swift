@@ -42,18 +42,17 @@ class SearchViewController: UIViewController {
 // MARK: - Search Bar Delegate
 extension SearchViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-    searchBar.resignFirstResponder()
-    searchResults = []
-    if searchBar.text! != "justin bieber" {
-      for i in 0 ... 2 {
-        let searchResult = SearchResult()
-        searchResult.name = String(format: "Fake Result %d for", i)
-        searchResult.artistName = searchBar.text!
-        searchResults.append(searchResult)
+      if !searchBar.text!.isEmpty {
+          searchBar.resignFirstResponder()
+          
+          hasSearched = true
+          searchResults = []
+          
+          let url = iTunesURL(searchText: searchBar.text!)
+          print("URL: '\(url)'")
+          
+          tableView.reloadData()
       }
-    }
-    hasSearched = true
-    tableView.reloadData()
   }
 
   func position(for bar: UIBarPositioning) -> UIBarPosition {
