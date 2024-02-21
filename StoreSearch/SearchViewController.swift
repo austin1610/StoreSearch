@@ -45,6 +45,7 @@ class SearchViewController: UIViewController {
             return try Data(contentsOf: url)
         } catch {
             print("Download Error: \(error.localizedDescription)")
+            showNetworkError()
             return nil
         }
     }
