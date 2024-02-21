@@ -13,6 +13,12 @@ class SearchViewController: UIViewController {
 
   var searchResults = [SearchResult]()
   var hasSearched = false
+    
+  struct TableView {
+      struct CellIdentifiers {
+          static let searchResultCell = "SearchResultCell"
+      }
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
