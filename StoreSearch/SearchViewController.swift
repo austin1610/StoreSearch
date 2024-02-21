@@ -59,6 +59,14 @@ class SearchViewController: UIViewController {
             return []
         }
     }
+    
+    func showNetworkError() {
+        let alert = UIAlertController(
+            title: "Whoops...",
+            message: "There was an error accessing the iTunes Store." +
+            " Please try again.",
+            preferredStyle: .alert)
+    }
 }
 
 // MARK: - Search Bar Delegate
