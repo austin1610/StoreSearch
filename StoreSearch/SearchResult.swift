@@ -15,12 +15,13 @@ class ResultArray: Codable {
 class SearchResult: Codable, CustomStringConvertible {
     var artistName: String? = ""
     var trackName: String? = ""
+    var kind: String? = ""
     
     var name: String {
         return trackName ?? ""
     }
     
     var description: String {
-        return "\nResult - Name: \(name), Artist Name: \(artistName ?? "None")"
+        return "\nResult - Kind: \(kind ?? "None"), Name: \(name), Artist Name: \(artistName ?? "None")"
     }
 }
