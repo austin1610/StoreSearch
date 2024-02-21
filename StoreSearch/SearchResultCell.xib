@@ -51,6 +51,11 @@
                     <constraint firstItem="NhN-jp-xKn" firstAttribute="leading" secondItem="A2b-aF-G7X" secondAttribute="trailing" constant="8" id="slb-Rj-Jpq"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="artistNameLabel" destination="Ih0-nd-EHe" id="VYh-BM-5MF"/>
+                <outlet property="artworkImageView" destination="A2b-aF-G7X" id="tJv-eX-u9N"/>
+                <outlet property="nameLabel" destination="NhN-jp-xKn" id="X6v-KH-UA7"/>
+            </connections>
             <point key="canvasLocation" x="261.60000000000002" y="-49.475262368815599"/>
         </tableViewCell>
     </objects>
