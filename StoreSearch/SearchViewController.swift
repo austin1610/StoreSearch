@@ -23,8 +23,8 @@ class SearchViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
-    let cellNib = UINib(nibName: "SearchResultCell", bundle: nil)
-    tableView.register(cellNib, forCellReuseIdentifier: "SearchResultCell")
+    let cellNib = UINib(nibName: TableView.CellIdentifiers.searchResultCell, bundle: nil)
+    tableView.register(cellNib, forCellReuseIdentifier: TableView.CellIdentifiers.searchResultCell)
   }
 }
 
@@ -63,7 +63,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cellIdentifier = "SearchResultCell"
+    let cellIdentifier = TableView.CellIdentifiers.searchResultCell
     
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SearchResultCell
       
