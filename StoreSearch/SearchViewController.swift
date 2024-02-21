@@ -17,6 +17,7 @@ class SearchViewController: UIViewController {
   struct TableView {
       struct CellIdentifiers {
           static let searchResultCell = "SearchResultCell"
+          static let nothingFoundCell = "NothingFoundCell"
       }
   }
 
