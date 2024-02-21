@@ -61,6 +61,9 @@ extension SearchViewController: UISearchBarDelegate {
           
           let url = iTunesURL(searchText: searchBar.text!)
           print("URL: '\(url)'")
+          if let jsonString = performStoreRequest(with: url) {
+              print("Received JSON string '\(jsonString)'")
+          }
           
           tableView.reloadData()
       }
