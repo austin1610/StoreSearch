@@ -40,9 +40,9 @@ class SearchViewController: UIViewController {
       return url!
   }
     
-    func performStoreRequest(with url: URL) -> String? {
+    func performStoreRequest(with url: URL) -> Data? {
         do {
-            return try String(contentsOf: url, encoding: .utf8)
+            return try Data(contentsOf: url)
         } catch {
             print("Download Error: \(error.localizedDescription)")
             return nil
