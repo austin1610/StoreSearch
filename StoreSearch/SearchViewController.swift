@@ -30,6 +30,13 @@ class SearchViewController: UIViewController {
       tableView.register(cellNib, forCellReuseIdentifier: TableView.CellIdentifiers.nothingFoundCell)
       searchBar.becomeFirstResponder()
   }
+    
+  // MARK: - Helper Methods
+  func iTunesURL(searchText: String) -> URL {
+      let urlString = String(format: "https://itunes.apple.com/search?term=%@", searchText)
+      let url = URL(string: urlString)
+      return url!
+  }
 }
 
 // MARK: - Search Bar Delegate
