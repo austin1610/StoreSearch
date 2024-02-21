@@ -48,6 +48,17 @@ class SearchViewController: UIViewController {
             return nil
         }
     }
+    
+    func parse(data: Data) -> [SearchResult] {
+        do {
+            let decoder = JSONDecoder()
+            let result = try decoder.decode(ResultArray.self, from: data)
+            return result.results
+        } catch {
+            print("JSON Error: \(error)")
+            return []
+        }
+    }
 }
 
 // MARK: - Search Bar Delegate
