@@ -66,19 +66,16 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cellIdentifier = TableView.CellIdentifiers.searchResultCell
-    
-    let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SearchResultCell
-      
     if searchResults.count == 0 {
-        cell.nameLabel.text = "(Nothing found)"
-        cell.artistNameLabel.text = ""
+        return tableView.dequeueReusableCell(withIdentifier: TableView.CellIdentifiers.nothingFoundCell, for: indexPath)
     } else {
-      let searchResult = searchResults[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableView.CellIdentifiers.searchResultCell, for: indexPath) as! SearchResultCell
+        
+        let searchResult = searchResults[indexPath.row]
         cell.nameLabel.text = searchResult.name
         cell.artistNameLabel.text = searchResult.artistName
+        return cell
     }
-    return cell
   }
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
