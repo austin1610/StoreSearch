@@ -42,4 +42,21 @@ class SearchResult: Codable, CustomStringConvertible {
     var description: String {
         return "\nResult - Kind: \(kind ?? "None"), Name: \(name), Artist Name: \(artistName ?? "None")"
     }
+    
+    var storeURL: String {
+        return trackViewUrl ?? collectionViewUrl ?? ""
+    }
+    
+    var price: Double {
+        return trackPrice ?? collectionPrice ?? itemPrice ?? 0.0
+    }
+    
+    var genre: String {
+        if let genre = itemGenre {
+            return genre
+        } else if let genres = bookGenre {
+            return genres.joined(separator: ", ")
+        }
+        return ""
+    }
 }
