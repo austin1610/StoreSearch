@@ -20,20 +20,23 @@ class SearchResult: Codable, CustomStringConvertible {
     var currency = ""
     var imageSmall = ""
     var imageLarge = ""
-    var storeURL: String? = ""
-    var genre = ""
+    var trackViewUrl: String?
+    var collectionName: String?
+    var collectionViewUrl: String?
+    var collectionPrice: Double?
+    var itemPrice: Double?
+    var itemGenre: String?
+    var bookGenre: [String]?
     
     enum CodingKeys: String, CodingKey {
         case imageSmall = "artworkUrl60"
         case imageLarge = "artworkUrl100"
-        case storeURL = "trackViewUrl"
-        case genre = "primaryGenreName"
         case kind, artistName, trackName
         case trackPrice, currency
     }
     
     var name: String {
-        return trackName ?? ""
+        return trackName ?? collectionName ?? ""
     }
     
     var description: String {
