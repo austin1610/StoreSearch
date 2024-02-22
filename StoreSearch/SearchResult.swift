@@ -31,8 +31,9 @@ class SearchResult: Codable, CustomStringConvertible {
     enum CodingKeys: String, CodingKey {
         case imageSmall = "artworkUrl60"
         case imageLarge = "artworkUrl100"
-        case kind, artistName, trackName
-        case trackPrice, currency
+        case kind, artistName, currency
+        case trackName, trackPrice, trackViewUrl
+        case collectionName, collectionViewUrl, collectionPrice
     }
     
     var name: String {
