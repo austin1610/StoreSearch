@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2614930E2B87D8E400C1D2BC /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2614930D2B87D8E400C1D2BC /* LoadingCell.xib */; };
 		267CA8452B8442C000D5D0B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267CA8442B8442C000D5D0B1 /* AppDelegate.swift */; };
 		267CA8472B8442C000D5D0B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267CA8462B8442C000D5D0B1 /* SceneDelegate.swift */; };
 		267CA8492B8442C000D5D0B1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267CA8482B8442C000D5D0B1 /* SearchViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2614930D2B87D8E400C1D2BC /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		267CA8412B8442BF00D5D0B1 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267CA8442B8442C000D5D0B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267CA8462B8442C000D5D0B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				26A160C72B858CA4009B10BF /* SearchResultCell.xib */,
 				26A160CB2B85971A009B10BF /* SearchResultCell.swift */,
 				26853C692B859FF0009BFA77 /* NothingFoundCell.xib */,
+				2614930D2B87D8E400C1D2BC /* LoadingCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				267CA8512B8442C600D5D0B1 /* LaunchScreen.storyboard in Resources */,
 				267CA84E2B8442C600D5D0B1 /* Assets.xcassets in Resources */,
+				2614930E2B87D8E400C1D2BC /* LoadingCell.xib in Resources */,
 				26A160C82B858CA4009B10BF /* SearchResultCell.xib in Resources */,
 				26853C6A2B859FF1009BFA77 /* NothingFoundCell.xib in Resources */,
 				267CA84C2B8442C000D5D0B1 /* Main.storyboard in Resources */,
