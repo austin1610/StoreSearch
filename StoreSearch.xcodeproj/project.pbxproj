@@ -18,6 +18,7 @@
 		26A160C62B854F39009B10BF /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A160C52B854F39009B10BF /* SearchResult.swift */; };
 		26A160C82B858CA4009B10BF /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26A160C72B858CA4009B10BF /* SearchResultCell.xib */; };
 		26A160CC2B85971A009B10BF /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A160CB2B85971A009B10BF /* SearchResultCell.swift */; };
+		26F5A96E2B8EE6030043A947 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A96D2B8EE6030043A947 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		26A160C52B854F39009B10BF /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		26A160C72B858CA4009B10BF /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		26A160CB2B85971A009B10BF /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		26F5A96D2B8EE6030043A947 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				26853C692B859FF0009BFA77 /* NothingFoundCell.xib */,
 				2614930D2B87D8E400C1D2BC /* LoadingCell.xib */,
 				2614930F2B88365500C1D2BC /* UIImageView+DownloadImage.swift */,
+				26F5A96D2B8EE6030043A947 /* DetailViewController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				26A160C62B854F39009B10BF /* SearchResult.swift in Sources */,
 				267CA8472B8442C000D5D0B1 /* SceneDelegate.swift in Sources */,
 				26A160CC2B85971A009B10BF /* SearchResultCell.swift in Sources */,
+				26F5A96E2B8EE6030043A947 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
