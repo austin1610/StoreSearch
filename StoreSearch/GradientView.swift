@@ -38,4 +38,3 @@ class GradientView: UIView {
     context?.drawRadialGradient(gradient!, startCenter: centerPoint, startRadius: 0, endCenter: centerPoint, endRadius: radius, options: .drawsAfterEndLocation)
   }
 }
-

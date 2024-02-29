@@ -16,11 +16,17 @@ class DetailViewController: UIViewController {
   @IBOutlet var genreLabel: UILabel!
   @IBOutlet var priceButton: UIButton!
 
+  enum AnimationStyle {
+    case slide
+    case fade
+  }
+
   var searchResult: SearchResult!
   var downloadTask: URLSessionDownloadTask?
-    
+  var dismissStyle = AnimationStyle.fade
+
   required init?(coder aDecoder: NSCoder) {
-     super.init(coder: aDecoder)
+    super.init(coder: aDecoder)
     transitioningDelegate = self
   }
 
@@ -48,6 +54,7 @@ class DetailViewController: UIViewController {
 
   // MARK: - Actions
   @IBAction func close() {
+    dismissStyle = .slide
     dismiss(animated: true, completion: nil)
   }
 
@@ -97,11 +104,16 @@ extension DetailViewController: UIGestureRecognizerDelegate {
 }
 
 extension DetailViewController: UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return BounceAnimationController()
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+  func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return BounceAnimationController()
+  }
+
+  func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    switch dismissStyle {
+    case .slide:
       return SlideOutAnimationController()
+    case .fade:
+      return FadeOutAnimationController()
     }
+  }
 }
