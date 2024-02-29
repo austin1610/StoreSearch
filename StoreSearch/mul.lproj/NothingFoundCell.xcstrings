@@ -1,0 +1,18 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "M5B-aT-nPq.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Nothing Found\"; ObjectID = \"M5B-aT-nPq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Nothing Found"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
