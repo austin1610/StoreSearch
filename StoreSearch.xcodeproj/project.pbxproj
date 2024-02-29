@@ -24,6 +24,7 @@
 		26F5A9742B8EF0A10043A947 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A9732B8EF0A10043A947 /* SlideOutAnimationController.swift */; };
 		26F5A9762B8FEED00043A947 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A9752B8FEED00043A947 /* LandscapeViewController.swift */; };
 		26F5A9782B8FF2A40043A947 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A9772B8FF2A40043A947 /* FadeOutAnimationController.swift */; };
+		26F5A97A2B9041500043A947 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5A9792B9041500043A947 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		26F5A9732B8EF0A10043A947 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		26F5A9752B8FEED00043A947 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		26F5A9772B8FF2A40043A947 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
+		26F5A9792B9041500043A947 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				267CA8482B8442C000D5D0B1 /* SearchViewController.swift */,
 				26F5A9732B8EF0A10043A947 /* SlideOutAnimationController.swift */,
 				2614930F2B88365500C1D2BC /* UIImageView+DownloadImage.swift */,
+				26F5A9792B9041500043A947 /* Search.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F5A97A2B9041500043A947 /* Search.swift in Sources */,
 				267CA8492B8442C000D5D0B1 /* SearchViewController.swift in Sources */,
 				267CA8452B8442C000D5D0B1 /* AppDelegate.swift in Sources */,
 				26F5A9782B8FF2A40043A947 /* FadeOutAnimationController.swift in Sources */,
