@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		261493102B88365500C1D2BC /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614930F2B88365500C1D2BC /* UIImageView+DownloadImage.swift */; };
+		265471AE2B929F170088C4E7 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265471AD2B929F170088C4E7 /* MenuTableViewController.swift */; };
 		267CA8452B8442C000D5D0B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267CA8442B8442C000D5D0B1 /* AppDelegate.swift */; };
 		267CA8472B8442C000D5D0B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267CA8462B8442C000D5D0B1 /* SceneDelegate.swift */; };
 		267CA8492B8442C000D5D0B1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267CA8482B8442C000D5D0B1 /* SearchViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		2614930F2B88365500C1D2BC /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		265471AD2B929F170088C4E7 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		267CA8412B8442BF00D5D0B1 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267CA8442B8442C000D5D0B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267CA8462B8442C000D5D0B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				26F5A9792B9041500043A947 /* Search.swift */,
 				26F5A9992B904ED40043A947 /* Localizable.strings */,
 				26F5A9A02B90530B0043A947 /* InfoPlist.strings */,
+				265471AD2B929F170088C4E7 /* MenuTableViewController.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				26A160C62B854F39009B10BF /* SearchResult.swift in Sources */,
 				26F5A9722B8EEFF10043A947 /* BounceAnimationController.swift in Sources */,
 				26F5A9762B8FEED00043A947 /* LandscapeViewController.swift in Sources */,
+				265471AE2B929F170088C4E7 /* MenuTableViewController.swift in Sources */,
 				267CA8472B8442C000D5D0B1 /* SceneDelegate.swift in Sources */,
 				26A160CC2B85971A009B10BF /* SearchResultCell.swift in Sources */,
 				26F5A9702B8EEF7F0043A947 /* GradientView.swift in Sources */,
